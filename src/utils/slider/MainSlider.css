@@ -1,0 +1,23 @@
+/* .swiper,
+.swiper img {
+  width: 559px;
+  height: 714px;
+} */
+
+/* .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+} */
+/* 
+.swiper-slide.swiper-slide-prev {
+  border: 1px solid red;
+} */
+
+/* .swiper-slide.swiper-slide-next {
+  border: 1px solid green;
+  transform: translate3d(calc(-1118px + 7.25%), 0px, -100px) rotateZ(0deg) scale(1) !important;
+} */
