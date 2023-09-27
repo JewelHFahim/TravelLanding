@@ -5,11 +5,23 @@ import img3 from "../../assets/nepal/nepalBottom.png";
 import img4 from "../../assets/Indonesia/indonesiaBg.png";
 import img5 from "../../assets/bg/Asset 1.png";
 import BookTour from "../../utils/button/BookTour";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import "./ViewPoint.css";
 
 const ViewPoint = () => {
+
   const [state, setState] = useState(2);
+  const [imgVisible, setImgVisible] = useState(true); 
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setImgVisible(true);
+    }, 500); 
+    return () => clearTimeout(timeout);
+  }, [state]);
+  
   const handleSelected = (index) => {
+    setImgVisible(false); 
     setState(index);
   };
 
@@ -29,7 +41,8 @@ const ViewPoint = () => {
   const imgSrc = handleImages(state)
 
   return (
-    <div className="mt-[-100px]">
+    <div className="mt-[-100px]" id="viewpoint">
+
       <div className="text-center">
         <h2 className="text-[#42a8bb] text-[76px] font-DancingScript">
           View Point
@@ -77,10 +90,11 @@ const ViewPoint = () => {
           <BookTour className="justify-start" />
         </div>
 
-        <div className="w-[60%]">
-          <img src={imgSrc} alt="" className="h-[650px] w-full" />
+        <div className="w-[60%] viewPointImg">
+          <img src={imgSrc} alt="" className={`h-[650px] w-full ${imgVisible ? "" : "fade-out"}`} />
         </div>
       </div>
+
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Slider3.css";
+import "./Slider.css";
 import { Pagination } from "swiper/modules";
 import { useContext, useEffect, useRef } from "react";
 import { MyContext } from "../../context/AppContext";

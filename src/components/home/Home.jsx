@@ -23,7 +23,7 @@ const Home = () => {
   const classChange = handleClass(activeSlideIndex);
 
   return (
-    <div className={`${classChange} h-[1080px] overflow-hidden`} >
+    <div className={`${classChange} h-[1080px] overflow-hidden`} id="home">
       <Navbar />
       <Header />
     </div>

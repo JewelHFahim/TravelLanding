@@ -1,0 +1,11 @@
+
+.viewPointImg img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .viewPointImg img.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  

@@ -1,4 +1,3 @@
-import { BsHexagonFill } from "react-icons/bs";
 import img1 from "../../assets/Indonesia/indonesiaLeft.png";
 import img2 from "../../assets/thailand/thilandLeft.png";
 import img3 from "../../assets/nepal/nepalLeft.png";
@@ -22,6 +21,7 @@ import img15 from "../../assets/nepal/nepal3.png";
 import bgLeft from "../../assets/bg/Asset 6.png";
 import bgright from "../../assets/bg/Asset 7.png";
 
+import { BsHexagonFill } from "react-icons/bs";
 import { useContext, useEffect } from "react";
 import { MyContext } from "../../context/AppContext";
 import BookTour from "../../utils/button/BookTour";
@@ -31,7 +31,6 @@ import "aos/dist/aos.css";
 const MostAttractivePlace = () => {
   const { activeSlideIndex } = useContext(MyContext);
 
-  
   useEffect(() => {
     AOS.init();
   }, []);
@@ -77,10 +76,9 @@ const MostAttractivePlace = () => {
     }
   };
   const info = handleChange(activeSlideIndex);
-console.log(info)
 
   return (
-    <section className="bg-[#001E23] pt-[120px] pb-[250px] w-full overflow-hidden">
+    <section className="bg-[#001E23] pt-[120px] pb-[250px] w-full overflow-hidden" id="most">
       <div className="text-center">
         <h2 className="text-[#42a8bb] text-[76px] font-DancingScript">
           Why you visit?

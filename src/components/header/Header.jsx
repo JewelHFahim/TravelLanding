@@ -4,7 +4,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { MyContext } from "../../context/AppContext";
-import Slider3 from "../../utils/slider3/Slider3";
+import Slider from "../../utils/slider/Slider";
 
 const contentData = [
   {
@@ -55,6 +55,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center mt-[40px]">
+      
       {/* Text Content */}
       <div className="w-1/2 pl-[140px]">
         
@@ -73,8 +74,7 @@ const Header = () => {
 
       {/* Slider Content */}
       <div className="w-1/2 flex flex-col items-end justify-end relative">
-        <Slider3 />
-
+        <Slider />
         <div className="flex gap-4 text-xl text-white absolute bottom-[-60px] right-[100px]">
           <FaYoutube />
           <FiInstagram />
